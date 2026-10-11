@@ -1,0 +1,11 @@
+# Install the CUDA-compatible PyTorch build recommended by your cluster first.
+torch>=2.6,<3
+transformers>=4.51,<6
+accelerate>=1,<2
+safetensors>=0.4
+pandas
+numpy
+scikit-learn
+python-dotenv
+pyarrow
+fastparquet
