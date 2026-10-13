@@ -22,6 +22,33 @@ DEFAULT_PROMPT = Path(__file__).resolve().parent / 'prompts' / 'evidence_only_ve
 DATA_MARKER = '\n\nINPUT_DATA_JSON:\n'
 
 
+def select_indices(data, seed, offset, limit, balanced=False):
+    """Select without replacement; balanced offsets slice a round-robin sequence."""
+    rng = random.Random(seed)
+    if not balanced:
+        indices = list(range(len(data)))
+        rng.shuffle(indices)
+        return indices[offset:offset + limit]
+    groups = {label: [] for label in LABELS}
+    for index, record in enumerate(data):
+        groups[record['label']].append(index)
+    for group in groups.values():
+        rng.shuffle(group)
+    labels = list(LABELS)
+    rng.shuffle(labels)
+    indices = []
+    for position in range(offset, offset + limit):
+        rank, label_position = divmod(position, len(labels))
+        label = labels[label_position]
+        if rank >= len(groups[label]):
+            raise ValueError(
+                f'Balanced selection needs at least {rank + 1} examples of '
+                f'{label!r}, but only {len(groups[label])} are available. '
+                'Reduce --limit or --offset; sampling does not duplicate examples.')
+        indices.append(groups[label][rank])
+    return indices
+
+
 def load_prompt_setting(path=DEFAULT_PROMPT):
     path = Path(path)
     raw = path.read_bytes()
@@ -308,6 +335,8 @@ def main():
     p.add_argument('--limit', type=int, default=5)
     p.add_argument('--offset', type=int, default=0)
     p.add_argument('--seed', type=int, default=42)
+    p.add_argument('--balanced', action='store_true',
+                   help='Sample evenly across verdict labels without replacement')
     p.add_argument('--repeats', type=int, default=1)
     p.add_argument('--conditions', nargs='+', choices=CONDITIONS, default=list(CONDITIONS))
     p.add_argument('--max-input-tokens', type=int, default=4096)
@@ -334,9 +363,10 @@ def main():
         if not isinstance(row.get('claim'), str) or row.get('label') not in LABELS:
             p.error('Expected labeled AVeriTeC train/dev records with claim and label.')
     # Random sample avoids a first-N pilot tied to the dataset's ordering.
-    indices = list(range(len(data)))
-    random.Random(args.seed).shuffle(indices)
-    indices = indices[args.offset:args.offset + args.limit]
+    try:
+        indices = select_indices(data, args.seed, args.offset, args.limit, args.balanced)
+    except ValueError as error:
+        p.error(str(error))
     if not indices:
         p.error('Selection is empty.')
     if args.output.exists() and any(args.output.iterdir()):
@@ -348,7 +378,9 @@ def main():
                 'arguments': {k: str(v) if isinstance(v, Path) else v for k, v in vars(args).items()},
                 'dataset_sha256': hashlib.sha256(data_bytes).hexdigest(),
                 'script_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
-                'selected_indices': indices, 'python': platform.python_version(),
+                'selected_indices': indices,
+                'selected_label_counts': dict(Counter(data[i]['label'] for i in indices)),
+                'python': platform.python_version(),
                 'dataset_label_counts': dict(Counter(r['label'] for r in data))}
     # Keep this out of the CLI-arguments snapshot; the full setting is saved above.
     args.prompt_setting = setting
