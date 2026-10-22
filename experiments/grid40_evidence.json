@@ -1,0 +1,537 @@
+{
+  "schema_version": 1,
+  "dataset_sha256": "ae5eda7c42ddf1695ef185a7ba1bc716928f5adf57103e4f78aae5f9afe00f9c",
+  "selection": {
+    "seed": 42,
+    "offset": 0,
+    "limit": 40,
+    "balanced": true
+  },
+  "construction": "Assistant-authored fabricated contradictions of an explicit source statement; not verified facts. Human review recommended before inference.",
+  "entries": [
+    {
+      "dataset_index": 976,
+      "claim": "Jio is giving Indian users a free recharge of ₹498.",
+      "single_evidence_id": "Q4A1",
+      "source_unit": {
+        "id": "Q4A1",
+        "question": "Is jiofreecharge.xyz a valid site?",
+        "answer": "No",
+        "boolean_explanation": "Failed to load"
+      },
+      "synthetic_answer": "Yes. The website jiofreecharge.xyz loads successfully and is a valid site.",
+      "contradiction_note": "Reverses the failed-load/invalid-site answer.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 2917,
+      "claim": "Hot lemon can cure all cancers. The acids and carboxylic acids contained in lemon juice can regulate high blood pressure, protect narrow arteries, regulate blood circulation and reduce blood clotting.",
+      "single_evidence_id": "Q1A1",
+      "source_unit": {
+        "id": "Q1A1",
+        "question": "What can hot lemon cure",
+        "answer": "Lemon can cure asthma and help patients with norovirus but nothing to prove that it cures cancer"
+      },
+      "synthetic_answer": "Hot lemon does not help patients with norovirus.",
+      "contradiction_note": "Negates one explicit positive statement; does not manufacture proof of a cancer cure.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 500,
+      "claim": "The low-cost steroid dexamethasone is a “life-saving” drug for COVID-19 patients.",
+      "single_evidence_id": "Q2A1",
+      "source_unit": {
+        "id": "Q2A1",
+        "question": "What did the government's RECOVERY trial find out about the effectiveness of dexamethosone as a COVID-19 treatment?",
+        "answer": "Dexamethasone reduced deaths by one-third in ventilated patients (rate ratio 0.65 [95% confidence interval 0.48 to 0.88]; p=0.0003) and by one fifth in other patients receiving oxygen only (0.80 [0.67 to 0.96]; p=0.0021). There was no benefit among those patients who did not require respiratory support (1.22 [0.86 to 1.75]; p=0.14).\n\nBased on these results, 1 death would be prevented by treatment of around 8 ventilated patients or around 25 patients requiring oxygen alone."
+      },
+      "synthetic_answer": "In the RECOVERY trial, dexamethasone did not reduce deaths in ventilated patients or in patients receiving oxygen only.",
+      "contradiction_note": "Negates the reported mortality reductions in the same patient groups.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 1914,
+      "claim": "President Donald Trump’s 2020 campaign is selling plastic straws with the president’s name on them.",
+      "single_evidence_id": "Q1A1",
+      "source_unit": {
+        "id": "Q1A1",
+        "question": "Does Donald Trump's 2020 campaign merchandise include plastic straws?",
+        "answer": "Yes",
+        "boolean_explanation": "The 2020 online collection incudes res plastic straws with \"Trump\" in white letters."
+      },
+      "synthetic_answer": "No. The 2020 Trump campaign merchandise collection contains no plastic straws bearing the Trump name.",
+      "contradiction_note": "Reverses merchandise inclusion.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 1529,
+      "claim": "US manufacturing jobs have increased by over 600,000",
+      "single_evidence_id": "Q1A1",
+      "source_unit": {
+        "id": "Q1A1",
+        "question": "How many new manufacturing jobs were there in the USA after Trump took office?",
+        "answer": "The Labor Department shows that, through October, the United States has added 443,000 manufacturing jobs since Mr. Trump took office"
+      },
+      "synthetic_answer": "Through the same October reporting period, the United States added 743,000 manufacturing jobs since Trump took office.",
+      "contradiction_note": "Changes the count from 443,000 to 743,000 with the period held fixed.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 2957,
+      "claim": "There is a ‘global average’ for the number of judges and magistrates to number of people per country.",
+      "single_evidence_id": "Q1A1",
+      "source_unit": {
+        "id": "Q1A1",
+        "question": "How are global averages calculated?",
+        "answer": "To allow for population differences in countries usually an average is based on per 100,000 people."
+      },
+      "synthetic_answer": "To allow for population differences, the averages described here use a denominator of 10,000 people, not 100,000.",
+      "contradiction_note": "Changes the stated denominator; context-level contradiction, not proof of the claimed global average.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 1501,
+      "claim": "In US \"160 million people like their private insurance.\"",
+      "single_evidence_id": "Q1A1",
+      "source_unit": {
+        "id": "Q1A1",
+        "question": "What do surveys and polls reveal about the attitude of people in the US towards their medical healthcare situations?",
+        "answer": "Most people with employer-sponsored insurance (ESI) are generally satisfied with their health plans, and large shares say they feel “grateful” and “content” about their insurance while fewer say they are “angry” or “frustrated.”"
+      },
+      "synthetic_answer": "Most people with employer-sponsored insurance are dissatisfied with their health plans; a majority describe feeling angry or frustrated rather than grateful or content.",
+      "contradiction_note": "Reverses the majority satisfaction finding.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 143,
+      "claim": "Balbir Singh converted to Islam after he participated in the demolition of Babri Masjid",
+      "single_evidence_id": "Q2A1",
+      "source_unit": {
+        "id": "Q2A1",
+        "question": "What religion did Balbir Singh convert to",
+        "answer": "He converted to Islam and is now known as Mohammed Amir"
+      },
+      "synthetic_answer": "Balbir Singh did not convert to Islam and did not adopt the name Mohammed Amir.",
+      "contradiction_note": "Negates the conversion and name change.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 2465,
+      "claim": "The Indian government has issued an order against sharing political posts online.",
+      "single_evidence_id": "Q2A1",
+      "source_unit": {
+        "id": "Q2A1",
+        "question": "Does the Crime Prevention Council of India have authority to issue instruction on social media use?",
+        "answer": "The website does not look like the government endorses the council as illustrated by the image at the bottom of the home page which implies that only the media endorse them. The council is not linked to the government."
+      },
+      "synthetic_answer": "The Crime Prevention Council of India is linked to and endorsed by the Indian government.",
+      "contradiction_note": "Reverses the stated absence of a government link.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 23,
+      "claim": "Kenya had a population of about 48 million with one judge serving over 300,000 people in 2019.",
+      "single_evidence_id": "Q1A1",
+      "source_unit": {
+        "id": "Q1A1",
+        "question": "According to the 2019 census data what was the population of Kenya?",
+        "answer": "Posted on November 4, 2019\nThe total enumerated population was 47,564,296"
+      },
+      "synthetic_answer": "The total enumerated population in the 2019 Kenya census was 37,564,296.",
+      "contradiction_note": "Changes the same census total from 47,564,296.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 1028,
+      "claim": "Novel coronavirus is an airbourne virus and remains infectious in the air for 8 hours.",
+      "single_evidence_id": "Q2A1",
+      "source_unit": {
+        "id": "Q2A1",
+        "question": "How long does corona virus last in the air?",
+        "answer": "Upto 3 hours."
+      },
+      "synthetic_answer": "Under the conditions described, coronavirus remains infectious in the air for up to 8 hours, not 3 hours.",
+      "contradiction_note": "Changes the stated airborne survival duration.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 216,
+      "claim": "Reports as recent as 2017 reported 92% prevalence of blood lead poisoning in children from some villages in the Nigerian state of Zamfara.",
+      "single_evidence_id": "Q4A1",
+      "source_unit": {
+        "id": "Q4A1",
+        "question": "Where did this figure come from?",
+        "answer": "a 2013 study of 307 children below age six as the likely source of his claim. He said he may have mistaken this as being in 2017.\n\nThe study focused on a village in the Kawaye area of Anka local council in Zamfara. It recruited the children through random sampling to reduce bias. The researchers, who included the Ahmadu Bello University and the national and state health ministries,  found a 92.5% prevalence of lead poisoning, the same proportion as Abdulsalam’s claim."
+      },
+      "synthetic_answer": "The 2013 study of 307 children below age six in Kawaye, Anka, found a 12.5% prevalence of lead poisoning, not 92.5%.",
+      "contradiction_note": "Changes the prevalence in the same study and population.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 1286,
+      "claim": "Under a COVID-19 financial relief scheme called Rashtriya Shikshit Berojgar Yojana, the Government of India will provide financial aid of Rs 50,000 to ration cardholders.",
+      "single_evidence_id": "Q4A1",
+      "source_unit": {
+        "id": "Q4A1",
+        "question": "How much are people entitled to in the RSBY scheme",
+        "answer": "The objective of RSBY is to provide protection to BPL households from financial liabilities arising out of health shocks that involve hospitalization. Beneficiaries under RSBY are entitled to hospitalization coverage up to Rs. 30,000/- for most of the diseases that require hospitalization"
+      },
+      "synthetic_answer": "Beneficiaries under RSBY are entitled to hospitalization coverage up to Rs. 50,000, rather than Rs. 30,000.",
+      "contradiction_note": "Changes the coverage cap; does not conflate hospitalization coverage with cash relief.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 2647,
+      "claim": "Since the Safe Initiative was launched in 2018, 699 schools have been provided with safe and appropriate sanitation facilities and projects and a further 1,150 schools are either in planning, design or construction stages",
+      "single_evidence_id": "Q1A1",
+      "source_unit": {
+        "id": "Q1A1",
+        "question": "What is the Safe Initiative and when was it launched in South Africa?",
+        "answer": "The Sanitation Appropriate For Education (Safe) initiative was launched on 14 August 2018."
+      },
+      "synthetic_answer": "The Sanitation Appropriate For Education initiative was launched on 14 August 2016, not 14 August 2018.",
+      "contradiction_note": "Changes the launch year; context-level contradiction.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 1921,
+      "claim": "Trump claims his deregulatory actions are saving American households $3,000 a year.",
+      "single_evidence_id": "Q2A1",
+      "source_unit": {
+        "id": "Q2A1",
+        "question": "What does the report 'The Economic Effects of Federal Deregulation since January 2017: An Interim Report' say about the $3,000 saving as a result of deregulations?",
+        "answer": "The Council of Economic \nAdvisers (CEA) estimates that after 5 to 10 years, this new approach to Federal regulation will \nhave raised real incomes by $3,100 per household per year."
+      },
+      "synthetic_answer": "The June 2019 CEA report estimates that deregulation had already raised real incomes by $3,100 per household per year by publication, rather than projecting this gain after 5 to 10 years.",
+      "contradiction_note": "Changes a future projection to an already-realized gain.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 2120,
+      "claim": "Former Minnesota Senator Franken was accused credibly by eight women of groping and forceable kissing, all of which were corroborated in real time.",
+      "single_evidence_id": "Q2A1",
+      "source_unit": {
+        "id": "Q2A1",
+        "question": "How many women accused Senator Franken of sexual harassment",
+        "answer": "Asides Leann Tweeden, 7 more women accused the senator"
+      },
+      "synthetic_answer": "Including Leeann Tweeden, four women accused Senator Franken of sexual harassment, not eight.",
+      "contradiction_note": "Changes the total number of accusers.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 406,
+      "claim": "An image purported to show a political billboard from the young arm of New Zealand National Party shows a culturally insensitive slogan towards Māoris.",
+      "single_evidence_id": "Q1A1",
+      "source_unit": {
+        "id": "Q1A1",
+        "question": "Where did the billboards originate from",
+        "answer": "The billboards were not put up by either the Young Nats or their political rivals, but by a team of professional wrestlers."
+      },
+      "synthetic_answer": "The billboards were put up by the Young Nats themselves, not by a team of professional wrestlers.",
+      "contradiction_note": "Changes the billboard origin.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 378,
+      "claim": "Prime Minister Narendra Modi has “inducted” 22-year-old Prathap NM from Karnataka, who builds drones from e-wastes, into the Defence Research and Development Organisation (DRDO).",
+      "single_evidence_id": "Q2A1",
+      "source_unit": {
+        "id": "Q2A1",
+        "question": "Can PM Modi induct someone into the DRDO",
+        "answer": "Every year RAC recruits Scientists in DRDS mostly at entry level (Scientist 'B'). However, depending on the requirements in specialized areas of research & development, limited number of scientists are also recruited in higher grades (Scientist 'C' to Scientist 'H')."
+      },
+      "synthetic_answer": "RAC does not recruit scientists into DRDS at entry level Scientist B; all its scientist recruitment is at grades C through H.",
+      "contradiction_note": "Negates the explicit entry-level recruitment description; does not establish the individual appointment.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 2063,
+      "claim": "1.9 million more children are in good and outstanding schools.",
+      "single_evidence_id": "Q4A1",
+      "source_unit": {
+        "id": "Q4A1",
+        "question": "How many children are in schools that havn't been rated by Ofsted?",
+        "answer": "580,000 pupils were in schools that hadn’t even been inspected since 2010."
+      },
+      "synthetic_answer": "No pupils were in schools that had gone uninspected since 2010; the count was zero rather than 580,000.",
+      "contradiction_note": "Changes the count of pupils in uninspected schools.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 2990,
+      "claim": "For a cumulative 29 years out of 60 years of existence as a nation, Nigeria has been under military rule.",
+      "single_evidence_id": "Q1A2",
+      "source_unit": {
+        "id": "Q1A2",
+        "question": "When was Nigeria under military rule?",
+        "answer": "The second military rule was 16 years, from 1983-1999."
+      },
+      "synthetic_answer": "The second period of Nigerian military rule lasted six years, from 1993 to 1999, not sixteen years from 1983 to 1999.",
+      "contradiction_note": "Changes the beginning and duration of the same second period.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 2459,
+      "claim": "50%of all school teachers in Texas (US) are working second or third jobs.",
+      "single_evidence_id": "Q1A1",
+      "source_unit": {
+        "id": "Q1A1",
+        "question": "According to research what number of teachers in Texas are working 2nd and 3rd jobs",
+        "answer": "Overall,\n18 percent of teachers had a job\noutside their school system"
+      },
+      "synthetic_answer": "Overall, 50 percent of Texas teachers had a job outside their school system, rather than 18 percent.",
+      "contradiction_note": "Changes the survey proportion.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 2525,
+      "claim": "Virginia House Delegate says that Republicans have had more African-Americans on key committees than when the Democrats were in control.",
+      "single_evidence_id": "Q2A1",
+      "source_unit": {
+        "id": "Q2A1",
+        "question": "Are there rules that affect the appointment of a black senator",
+        "answer": "There is none"
+      },
+      "synthetic_answer": "There are rules that affect the appointment of a Black senator to the committee.",
+      "contradiction_note": "Reverses the explicit absence of appointment rules; does not supply missing membership counts.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 1085,
+      "claim": "\"Part of that was bailing out the automobile industry — saving thousands of jobs, tens of thousands of jobs over time. (Sanders) voted against that as well.\"",
+      "single_evidence_id": "Q3A1",
+      "source_unit": {
+        "id": "Q3A1",
+        "question": "Did Sanders vote in support of the December 2008 bailout proposal?",
+        "answer": "Yes",
+        "boolean_explanation": "\"Sanders voted in favor of a standalone meausre providing auto companies with $14 billion, which was separate from the Wall Street bailout funds he opposed.\""
+      },
+      "synthetic_answer": "No. Sanders voted against the standalone December 2008 measure providing auto companies with $14 billion.",
+      "contradiction_note": "Reverses the vote on the same standalone measure.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 619,
+      "claim": "Ultraviolet light could kill the coronavirus (SARS-CoV2)",
+      "single_evidence_id": "Q3A1",
+      "source_unit": {
+        "id": "Q3A1",
+        "question": "What types of light can kill a virus?",
+        "answer": "far-UVC, which can kill viruses and bacteria without harming human skin, eyes and other tissues"
+      },
+      "synthetic_answer": "Far-UVC does not kill viruses or bacteria under the conditions described.",
+      "contradiction_note": "Negates the stated germicidal effect.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 1161,
+      "claim": "We’ve gotten the highest poll numbers of anybody for handling a coronavirus outbreak.",
+      "single_evidence_id": "Q1A1",
+      "source_unit": {
+        "id": "Q1A1",
+        "question": "What percent did the Trump administration get in the polls?",
+        "answer": "In the Gallup poll referred to by Mr Trump, 77 percent of respondents said they were confident in the government’s ability to handle a coronavirus outbreak."
+      },
+      "synthetic_answer": "In the same Gallup poll, 47 percent of respondents expressed confidence in the government's ability to handle a coronavirus outbreak, not 77 percent.",
+      "contradiction_note": "Changes the poll percentage.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 1474,
+      "claim": "Policemen distributing tasbih, prayer beads used by Muslims, and wishing Jummah Mubarak after Uddhav Thackeray was sworn in as the chief minister of Maharashtra",
+      "single_evidence_id": "Q4A1",
+      "source_unit": {
+        "id": "Q4A1",
+        "question": "When was Qaumi Ekta Week celebrated?",
+        "answer": "19.11.2019 TO 25.11.2019"
+      },
+      "synthetic_answer": "The 2019 Qaumi Ekta Week ran from 29 November through 5 December, not 19 through 25 November.",
+      "contradiction_note": "Changes the event dates relative to the swearing-in date.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 165,
+      "claim": "Reports that Russia paid bounties or offered to pay bounties to Taliban-linked militants to kill American soldiers) never reached Trump's desk.",
+      "single_evidence_id": "Q2A1",
+      "source_unit": {
+        "id": "Q2A1",
+        "question": "Was the report made known to Donald Trump",
+        "answer": "The assessment was included in at least one of President Donald Trump’s written daily intelligence briefings at the time, according to the officials. Then-national security adviser John Bolton also told colleagues he briefed Trump on the intelligence assessment in March 2019."
+      },
+      "synthetic_answer": "The assessment was not included in any of Trump's written daily intelligence briefings, and Bolton did not brief Trump on it in March 2019.",
+      "contradiction_note": "Negates both reported briefing routes in this source unit; other supplied evidence already conflicts.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 1585,
+      "claim": "90,000 Californians are unsheltered and homeless.",
+      "single_evidence_id": "Q3A1",
+      "source_unit": {
+        "id": "Q3A1",
+        "question": "How many unsheltered homeless were recorded in 2018 in California?",
+        "answer": "89,543 people in California were unsheltered and homeless according to the  2018 Annual Homeless Assessment Report (AHAR) to Cong"
+      },
+      "synthetic_answer": "The 2018 AHAR recorded 49,543 unsheltered homeless people in California, not 89,543.",
+      "contradiction_note": "Changes the same report's count.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 854,
+      "claim": "President Buhari of Nigeria has decided to resign but some Nigerians are against it.",
+      "single_evidence_id": "Q2A1",
+      "source_unit": {
+        "id": "Q2A1",
+        "question": "What does Igbowatch say about the claim now?",
+        "answer": "APPEAL /Apology Over False Content.\n\n\n \n\nAn Earlier Version of this content was rated False by Dubawa via https://dubawa.org/buharis-would-be-resignation-plot-is-a-hoax/\n\nTHE version of the Incorrectly stated that President Muhammadu Buhari said he wanted to resign that Nigerians are saying No.\n\n\nWe have since punished the Content creator over such False News and wish to apologize to our Readers."
+      },
+      "synthetic_answer": "Igbowatch continues to stand by its report that Buhari wanted to resign and has issued no retraction or apology for it.",
+      "contradiction_note": "Reverses the reported publisher retraction.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 1367,
+      "claim": "The World Health Organization reports that in 2018, 4% of deaths in Nigeria were caused by cancer.",
+      "single_evidence_id": "Q1A1",
+      "source_unit": {
+        "id": "Q1A1",
+        "question": "How many deaths were there yearly in Nigeria?",
+        "answer": "It is estimated that in 2016 there were 2.13 million deaths in Nigeria, 4% of them due to cancer."
+      },
+      "synthetic_answer": "In 2016, Nigeria had an estimated 2.13 million deaths, with 8% due to cancer, not 4%.",
+      "contradiction_note": "Changes the cancer proportion while preserving 2016; does not fill the missing 2018 answer.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 137,
+      "claim": "Choluteca bridge was built in 1996.",
+      "single_evidence_id": "Q1A1",
+      "source_unit": {
+        "id": "Q1A1",
+        "question": "When was the Choluteca bridge built?",
+        "answer": "The Choluteca bridge was originally constructed in 1930 however it was rebuilt in 1996"
+      },
+      "synthetic_answer": "The Choluteca bridge was first constructed in 1996 and was not originally constructed in 1930.",
+      "contradiction_note": "Changes first construction versus reconstruction.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 1712,
+      "claim": "By 2018 only 3.95% of Nigeria's budget for funding the country's ministry of health had been allocated.",
+      "single_evidence_id": "Q2A1",
+      "source_unit": {
+        "id": "Q2A1",
+        "question": "What percent of the budget is the allocated amount?",
+        "answer": "The allocated amount works out to 3.91% of the allocated budget, according to the country’s budget office."
+      },
+      "synthetic_answer": "The allocated health ministry amount was 8.91% of the budget, not 3.91%.",
+      "contradiction_note": "Changes the percentage for the same allocation.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 2845,
+      "claim": "That annual milk production rose by 12%. to 163.7 MT between 2014-17 from 146.3MT between 2011-14 .",
+      "single_evidence_id": "Q2A1",
+      "source_unit": {
+        "id": "Q2A1",
+        "question": "What was was the milk production growth rate from 2014 to 2017",
+        "answer": "165.4"
+      },
+      "synthetic_answer": "163.7",
+      "contradiction_note": "Changes the answer for the same production period from 165.4 to 163.7.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 713,
+      "claim": "Florida has a 'balanced budget' in 2020.",
+      "single_evidence_id": "Q2A1",
+      "source_unit": {
+        "id": "Q2A1",
+        "question": "And did they have a revenue loss?",
+        "answer": "April experienced an overall combined revenue loss of $878.1 million\nfrom the estimate."
+      },
+      "synthetic_answer": "April experienced an overall combined revenue gain of $878.1 million relative to the estimate, not a loss.",
+      "contradiction_note": "Reverses the direction of the revenue deviation.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 2449,
+      "claim": "Russia has a lower prison population than America because of the presence of telephone justice in Russia",
+      "single_evidence_id": "Q2A1",
+      "source_unit": {
+        "id": "Q2A1",
+        "question": "What was the Russian prison population in 2019?",
+        "answer": "455,514 people were serving their sentences in correctional colonies in Russia"
+      },
+      "synthetic_answer": "In 2019, 1,855,514 people were serving sentences in correctional colonies in Russia, not 455,514.",
+      "contradiction_note": "Changes the count for the same population and year.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 2851,
+      "claim": "The Indian Government (BJP) claimed that the Pradhan Mantri Matru Vandana Yojana programme (PMMVY) benefited more than 50 lakh women every year.",
+      "single_evidence_id": "Q4A1",
+      "source_unit": {
+        "id": "Q4A1",
+        "question": "How many beneficiaries are covered annually by the PMMVY programme?",
+        "answer": "About 51.70 lakh beneficiaries are covered annually under PMMVY."
+      },
+      "synthetic_answer": "About 31.70 lakh beneficiaries are covered annually under PMMVY, not 51.70 lakh.",
+      "contradiction_note": "Changes the annual beneficiary count.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 1095,
+      "claim": "Novel coronavirus can be eliminated by drinking lots of water and gargling with warm water mixed with salt or vinegar.",
+      "single_evidence_id": "Q3A1",
+      "source_unit": {
+        "id": "Q3A1",
+        "question": "Does the WHO myth-buster address claims about saline solutions?",
+        "answer": "Yes",
+        "boolean_explanation": "There is some limited evidence that regularly rinsing the nose with saline can help people recover more quickly from the common cold. However, regularly rinsing the nose has not been shown to prevent respiratory infections."
+      },
+      "synthetic_answer": "No. The WHO myth-buster does not address claims about saline solutions.",
+      "contradiction_note": "Reverses whether the supplied source addresses saline; does not invent an efficacious remedy.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 777,
+      "claim": "Billionaire philanthropist and Microsoft founder Bill Gates worked  specifically to end livestock production.",
+      "single_evidence_id": "Q1A1",
+      "source_unit": {
+        "id": "Q1A1",
+        "question": "Has Bill Gates supported meat alternate foods?",
+        "answer": "Bill Gates has backed many start up meat alternative projects in efforts to lower Carbon footprints,"
+      },
+      "synthetic_answer": "Bill Gates has not backed any meat-alternative startup projects.",
+      "contradiction_note": "Negates the explicit financial backing; does not assert a motive about ending livestock.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 1669,
+      "claim": "(Nigeria has an estimated physician-patient ratio of one doctor to every 4,000 to 5,000 patients.) ...[This is] six times smaller than the physician-patient ratio (one physician to every 600 doctors) recommended by WHO.",
+      "single_evidence_id": "Q3A1",
+      "source_unit": {
+        "id": "Q3A1",
+        "question": "What is the ideal ratio of a healthcare worker to a population according to the World Health Organisation?",
+        "answer": "The agency had not prescribed any ideal ratio of healthcare workers to population."
+      },
+      "synthetic_answer": "The WHO has prescribed an ideal ratio of one healthcare worker for every 600 people.",
+      "contradiction_note": "Reverses absence of an ideal ratio with a specific ratio.",
+      "review_status": "draft"
+    },
+    {
+      "dataset_index": 2719,
+      "claim": "Maternal mortality rates show that mothers, especially black mothers, risk death to give birth in America.",
+      "single_evidence_id": "Q1A1",
+      "source_unit": {
+        "id": "Q1A1",
+        "question": "How many black women die during child birth in the US?",
+        "answer": "During 2014–2017, the pregnancy-related mortality ratio was 41.7 deaths per 100,000 live births for non-Hispanic Black women."
+      },
+      "synthetic_answer": "During 2014–2017, the pregnancy-related mortality ratio for non-Hispanic Black women was 4.7 deaths per 100,000 live births, not 41.7.",
+      "contradiction_note": "Changes the rate for the same group and period.",
+      "review_status": "draft"
+    }
+  ]
+}
